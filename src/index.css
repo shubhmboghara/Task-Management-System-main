@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+/* Hide scrollbar by default */
+.custom-scrolltask::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.custom-scrolltask:hover::-webkit-scrollbar,
+.custom-scrolltask:focus::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.custom-scrolltask::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* gray-400 */
+  border-radius: 99px;
+}
+.custom-scrolltask::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scroll {
+  overflow-x: auto;   /* Enable horizontal scrolling */
+  overflow-y: hidden;  /* Disable vertical scrolling */
+}
+
+/* Horizontal scrollbar styling for WebKit-based browsers */
+.custom-scroll::-webkit-scrollbar {
+  height: 6px;            /* Horizontal scrollbar height at the bottom */
+  width: 0px !important;  /* Force vertical scrollbar to remain hidden */
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+  background-color: #9ca3af; /* Tailwind gray-400 */
+  border-radius: 9999px;
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Remove any hover modifications that change the vertical scrollbar width */
+.custom-scroll:hover::-webkit-scrollbar {
+  height: 6px;           /* Maintain horizontal scrollbar height */
+  width: 0px !important; /* Ensure vertical scrollbar stays hidden */
+}
+
+                   
