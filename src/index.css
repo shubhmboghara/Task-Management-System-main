@@ -8,30 +8,30 @@
 
 .custom-scrolltask:hover::-webkit-scrollbar,
 .custom-scrolltask:focus::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 3.5px;
+  height: 1px;
 }
 
 .custom-scrolltask::-webkit-scrollbar-thumb {
-  background-color: #9ca3af; /* gray-400 */
+  background-color: #9ca3af;
   border-radius: 99px;
 }
 .custom-scrolltask::-webkit-scrollbar-track {
   background: transparent;
 }
 .custom-scroll {
-  overflow-x: auto;   /* Enable horizontal scrolling */
-  overflow-y: hidden;  /* Disable vertical scrolling */
+  overflow-x: auto;   
+  overflow-y: hidden;  
 }
 
 /* Horizontal scrollbar styling for WebKit-based browsers */
 .custom-scroll::-webkit-scrollbar {
-  height: 6px;            /* Horizontal scrollbar height at the bottom */
-  width: 0px !important;  /* Force vertical scrollbar to remain hidden */
+  height: 3px;            
+  width: 0px !important;  
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
-  background-color: #9ca3af; /* Tailwind gray-400 */
+  background-color: #9ca3af; 
   border-radius: 9999px;
 }
 
@@ -39,10 +39,9 @@
   background: transparent;
 }
 
-/* Remove any hover modifications that change the vertical scrollbar width */
 .custom-scroll:hover::-webkit-scrollbar {
-  height: 6px;           /* Maintain horizontal scrollbar height */
-  width: 0px !important; /* Ensure vertical scrollbar stays hidden */
+  height: 6px;        
+  width: 0px !important; 
 }
 
                    
