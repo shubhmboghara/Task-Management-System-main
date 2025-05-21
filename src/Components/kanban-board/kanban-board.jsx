@@ -131,7 +131,7 @@ export default function KanbanBoard() {
           </div>
         )}
         {errorMessage && (
-          <div className="bg-red-600 text-white px-4 py-2 rounded shadow-lg">
+          <div className="bg-red-600 text-white px-4 py-2 rounded shadow-lg mt-15">
             {errorMessage}
           </div>
         )}
@@ -171,9 +171,9 @@ export default function KanbanBoard() {
         vertical={false}
         hideScrollbars={false}
       >
-        <div className="flex  px-4 py-2 h-7 bg-[#f3f3f9] ">
+        <div className="flex  px-4 py-2 h-7 ] ">
           {statuses.map(status => (
-            <div key={status} className="flex-shrink-0 w-88 p-4 rounded-xl bg-[#f3f3f9] ">
+            <div key={status} className="flex-shrink-0 w-88 p-4 rounded-xl  ">
               <div className="flex justify-between items-center mb-2  ">
                 <h2 className="text-lg font-semibold text-[#303a4b]">
                   {status}
