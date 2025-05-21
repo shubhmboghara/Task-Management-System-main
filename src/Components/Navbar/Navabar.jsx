@@ -81,11 +81,11 @@ function Navabar() {
 
       
       {menuOpen && (
-        <ul className="flex flex-col absolute top-16 left-0 w-full bg-[#0d0d1a] text-gray-300 font-semibold px-6 py-4 space-y-4 md:hidden">
+        <ul className="flex flex-col absolute top-16 left-0 w-full bg-white  text-black  font-semibold px-6 py-4 space-y-4 md:hidden border border-black shadow shadow-2xl">
           {forhome && (
             <li>
               <Link to="/adminpanel" onClick={() => setMenuOpen(false)}>Home</Link>
-            </li>
+            </li> 
 
             
           )}

@@ -171,9 +171,9 @@ export default function KanbanBoard() {
         vertical={false}
         hideScrollbars={false}
       >
-        <div className="flex  px-4 py-2 h-7">
+        <div className="flex  px-4 py-2 h-7 bg-[#f3f3f9] ">
           {statuses.map(status => (
-            <div key={status} className="flex-shrink-0 w-88 p-4 rounded-xl bg-gray-100 ">
+            <div key={status} className="flex-shrink-0 w-88 p-4 rounded-xl bg-[#f3f3f9] ">
               <div className="flex justify-between items-center mb-2  ">
                 <h2 className="text-lg font-semibold text-[#303a4b]">
                   {status}
